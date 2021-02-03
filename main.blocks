@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="lGPhf*FC2HWZbA([%X/[">Player</variable><variable type="KIND_SpriteKind" id="9CDr3UqrFdzS}ULSkNy`">Projectile</variable><variable type="KIND_SpriteKind" id="3kGvVHhD)R]ea6m#vzmu">Food</variable><variable type="KIND_SpriteKind" id="O=,cJhKa4ywcNi;M[8=-">Enemy</variable><variable id="zlg{ed?-,+U8.1}$ZBSq">Carletti</variable><variable id="[dC?rI3PVG]kJl]3p[CF">mySprite</variable></variables><block type="pxt-on-start" id="@P9Bf7nPZe%UoJY:bq2Y" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="aZDR|v2x.tM_7wr$]jHX"><value name="color"><shadow type="colorindexpicker" id="i,MvHB5%H3bNsSr%(/vF"><field name="index">5</field></shadow></value><next><block type="variables_set" id="HrL$gJ]_!)1QisKy%|FI"><field name="VAR" id="zlg{ed?-,+U8.1}$ZBSq">Carletti</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="]NnaSRg-wX05r76WA*47"><value name="img"><shadow type="screen_image_picker" id="raj0bD?tU3bm/,+?YY{%"><field name="img">img`
+. . . . f f f f f . . . . . . . 
+. . . f e e e e e f . . . . . . 
+. . f d d d d e e e f f . . . . 
+. c d d d d d d e e d d f . . . 
+. c d f d d f d e e b d c . . . 
+c d d f d d f d e e b d c . f f 
+c d e e d d d d e e f c . f e f 
+c d d d d c d e e e f . . f e f 
+. f c c c d e e e f f . . f e f 
+. . f f f f f e e e e f . f e f 
+. . . . f e e e e e e e f f f . 
+. . f f e f e e f e e e e f . . 
+. f e f f e e f f f e e e f . . 
+f d d b d d c f f f f f f b f . 
+f d d c d d d f . . f c d d f . 
+. f f f f f f f . . . f f f . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id=")k/8u{^eECe]6Xhb:;Mh"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="SyOOq(jhT@0BslGJ]{jW"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="]WEs$nkVqx,j|l_xawDq"><field name="VAR" id="zlg{ed?-,+U8.1}$ZBSq">Carletti</field></block></value><next><block type="spritesetsetflag" id="0/Q?^+1]!3p={9v-IOS`"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get" id="}7])Cb)[SN#[iq8RH?Xk"><field name="VAR" id="zlg{ed?-,+U8.1}$ZBSq">Carletti</field></block></value><value name="on"><shadow type="toggleOnOff" id="kf8W3x8?e6Ep9iesgvMU"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="6rcKOWA;F4uXQpmW[T==" x="0" y="300"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="startEffectOnSprite" id="mNFjQ_K+ILrzJimCtyyh"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.confetti</field><value name="sprite"><block type="variables_get" id="DnuMSMKsW8?jqJ,SJQ+4"><field name="VAR" id="zlg{ed?-,+U8.1}$ZBSq">Carletti</field></block></value></block></statement></block></xml>
